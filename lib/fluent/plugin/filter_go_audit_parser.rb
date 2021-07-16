@@ -266,7 +266,7 @@ module Fluent
       def parseline(text)
         regex = /([^\s=]+)=('[^']*'|"[^"]*"|\S+)/
         text.scan(regex).each.with_object({}) do |(key, val), hash|
-          val = val[1..-2] if val.start_with?(/['"]/)
+          val = val[1..-2] if val.start_with?('\'') || val.start_with?('"')
           hash[key] = val
         end
       end
