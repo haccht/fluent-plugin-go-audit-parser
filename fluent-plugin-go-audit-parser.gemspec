@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name    = "fluent-plugin-go-audit-parser"
-  spec.version = "0.1.1"
+  spec.version = "0.1.2"
   spec.authors = ["haccht"]
   spec.email   = ["haccht@users.noreply.github.com"]
 
